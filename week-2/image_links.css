@@ -1,0 +1,63 @@
+header {
+    background-color: chartreuse;
+    border-radius: 3rem;
+    text-align: center;
+    padding: 1.9rem;
+    justify-content: space-around;
+    display: flex;
+}
+header nav a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-decoration: none;
+    background-color: azure;
+    border-radius: 50%;
+}
+header nav a:hover {
+    color: crimson;
+    background-color: cyan;
+    transition: all 0.5s ease-in-out;
+}
+.main {
+    text-align: center;
+    background-color: beige;
+}
+#HOME {
+    color: red;
+    text-align: center;
+    background-color: cadetblue;
+    border-style: double;
+    border-color: red;
+    border-radius: 70px;
+    padding: 1rem;
+    margin-top: 10px;
+}
+#GALLERY {
+    text-align: center;
+    color: green;
+    background-color: darkseagreen;
+    border-radius: 70px;
+    border-style: double;
+    border-color: aliceblue;
+    padding: 1rem;
+    margin-top: 10px;
+}
+#MENU {
+    background-color: coral;
+    text-align: center;
+    color: brown;
+    border-radius: 70px;
+    border-style: double;
+    border-color: aliceblue;
+    padding: 1rem;
+    margin-top: 10px;
+}
+img {
+    height:500px;
+    border-radius: 30px;
+    padding: 10px;
+}
+body #top {
+    text-decoration: none;
+}
