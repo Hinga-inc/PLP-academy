@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registeringform.css">
+    <title>student registration form</title>
+</head>
+<body>
+    <div class="registrationform">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <span>Fill out the following form with the correct information<br></span>
+        <small>All labels with an asterisk are required</small><br><br>
+        
+        <form >
+            <fieldset>
+                <label for="name">NAME:*</label>
+                <input type="text" id="name" placeholder="enter your full name" name="yourname" required><br>
+
+                <label for="gender">GENDER:*</label><br>
+                <input type="radio" id="male" name="gender" value="MALE" required>
+                <label for="male">MALE</label><br>
+                <input type="radio" id="female" name="gender" value="FEMALE" required>
+                <label for="female">FEMALE</label><br><br>
+
+                <label for="DOB">DATE OF BIRTH:*</label>
+                <input type="date" id="DOB" name="dateofbirth" placeholder="enter your date of birth" required><br><br>
+
+                <label for="phoneno">PHONE NO.:*</label>
+                <input type="number" id="phoneno" name="phonenumber" placeholder="enter your phone no" required><br><br>
+
+                <label for="address">ADDRESS:*</label>
+                <input type="text" id="address" name="youraddress" placeholder="enter your full address" required><br><br>
+
+                <label for="email">EMAIL:*</label>
+                <input type="email" id="email" name="your email" placeholder="enter you full email address" required><br><br>
+
+                <label for="course">COURSE:*</label>
+                <input type="text" id="course" name="your course" placeholder="enter your course name" required><br><br>
+
+                <label for="schoolof">SCHOOL OF:*</label>
+                <select id="schoolof" name="which school you are in" required>
+                    <option>SCHOOL OF HEALTH SCIENCES</option>
+                    <option>SCHOOL OF PURE AND APPLIED SCIENCES</option>
+                    <option>SCHOOL OF EDUCATION</option>
+                    <option>SCHOOL OF NURSING</option>
+                    <option>SCHOOL OF LAW</option>
+                    <option>SCHOOL OF BUSINESS</option>
+                </select><br><br>
+
+
+                <input type="submit" value="REGISTER">
+                <input type="reset" value="RESET"><br><br>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
