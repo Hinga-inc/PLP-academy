@@ -1,1 +1,1 @@
-the 
+this outlines the licencs for the usw of this repository.
