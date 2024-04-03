@@ -1,0 +1,36 @@
+body {
+    background-color: azure;
+}
+.intro {
+    background-color: orangered;
+    margin-top: 20px;
+    line-height: 20px;
+    border: 1px dotted orange;
+    padding: 10px;
+}
+.skills {
+    background-color: lightskyblue;
+}
+.skills ul {
+    color: blue;
+    list-style-type: none;
+    
+}
+.skills ul li {
+    margin: 5px;
+    padding: 5px;
+}
+.contactme {
+    background-color: aquamarine;
+    margin-top: 20px;
+    border: 1px solid antiquewhite;
+    padding: 10px;
+}
+.contactme p {
+    color: blue;
+    font-size: 20px;
+}
+.contactme ul a {
+    text-decoration: none;
+    color: blue;
+}
