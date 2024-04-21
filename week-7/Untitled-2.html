@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--this is DOM method of manipulating the class attribute of an element-->
+    <p>
+       hello mate 
+    </p>
+    <script>
+        p.classList.add('paragraph1');
+            // this adds a class - paragraph1 to the p element
+    </script>
+
+    <p class="paragraph2">
+        hello son
+    </p>
+    <script>
+        p.classList.remove('paragraph2');
+        // this removes the class - paragraph2 to the second p element
+    </script>
+    
+    <p class="oldParagraph">
+        hello brother
+    </p>
+    <script>
+        p.classList.replace('oldParagraph', 'newParagraph');
+        // this replaces the class to newParagraph of the third p
+    </script>
+
+    <p>
+        hello bro
+    </p>
+    <script>
+        p.classList.toggle('anotherParagraph');
+        // this adds a new class if non exists or removes one if it exists
+    </script>
+
+    <p class="lastParagraph">
+        hello world
+    </p>
+    <script>
+        p.classList.contains('lastParagraph');
+        // this checks is the class -lastParagraph exists, if it does it returns true
+    </script>
+</body>
+</html>
