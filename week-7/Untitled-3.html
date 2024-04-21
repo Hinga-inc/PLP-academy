@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="myParagraph">A new day is dawning</p>
+    <script>
+        const p = document.querySelector('.myParagraph');
+
+        p.style.fontWeight = '700'; // set font weight
+        p.style.textTransform = 'uppercase'; // set to uppercase
+        p.style.color = 'green'; // set color
+
+
+        const div = document.createElement('div');
+        div.innerText = 'This paragraph is created using JavaScript';
+        const body = document.querySelector('body');
+        body.append(div);
+    </script>
+</body>
+</html>
