@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--this is before learning that addEventListeners is advisable-->
+    <!--this is a practical of event listeners on html elemnts-->
+    <button onclick="handleClick()">click here!</button>
+    <script>
+        // this is the same as
+        // function handleClick(){}
+        const handleClick = () => {
+            alert(`The button was clicked`);
+        }
+    </script>
+
+
+    <button id="myBtn">click me instead</button>
+    <script>
+        const myBtn = document.querySelector('#myBtn');
+        myBtn.onclick = handleAnotherClick;
+
+        function handleAnotherClick(event){
+            alert('you clicked the other button');
+        }
+    </script>
+</body>
+</html>
