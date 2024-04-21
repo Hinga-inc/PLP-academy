@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--this is a dom method of changing contents of an element-->
+    <p class="paragraph1">
+        hello world
+    </p>
+    <!--so this program without running the script it will first output hello world-->
+    <script>
+        const p = document.querySelector('.paragraph1');
+        p.innerText = 'A new day is dawning';
+
+        // this will change the html p contents to 'a new day is dawwning'
+    </script>
+</body>
+</html>
