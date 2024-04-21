@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Click Me Please</button>
+    <script>
+        const button1 = document.querySelector('#btn1')
+        function clickedBtn(event){
+            alert('you clicked the first button on this page');
+        }
+
+        button1.addEventListener('click', clickedBtn);
+    </script>
+</body>
+</html>
