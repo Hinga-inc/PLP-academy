@@ -1,0 +1,43 @@
+#logo {
+    height: 50px;
+    border-color: aqua;
+    border-radius: 50%;
+}
+/* this styles the whole body to have a gradient of red and white*/
+body {
+    background: beige;
+    margin: auto;
+}
+/*this styles the whole header*/
+.heading {
+    background-color:antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    align-content: center;
+    padding: 1.5rem;
+    justify-content: space-around;
+}
+.heading nav a {
+    color:green;
+    padding: 0.4rem 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.heading nav a:hover {
+    color: crimson;
+    transition: all 0.5s ease-in-out;
+}
+.main {
+    text-align: center;
+}
+.ownerdetails {
+    padding: 1rem;
+    background-color:transparent;
+    text-align: center;
+    font-size: 20px;
+    font-weight:100;
+    color: grey;
+    transition: .2s;
+    margin-top: 50px;
+}

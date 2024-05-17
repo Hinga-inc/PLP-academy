@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta>
-    <meta>
-    <title>
-      
-    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <div class="task-form">
+      <input type="text" id="task-input" placeholder="Add a new task" />
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firebase.js"></script>
+    <script src="app.js"></script>
+
+    <!--    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAG1Ui_eCOarVPM86dzYYU0yLzJRcVs1L4",
+          authDomain: "plp-taskmanager.firebaseapp.com",
+          projectId: "plp-taskmanager",
+          storageBucket: "plp-taskmanager.appspot.com",
+          messagingSenderId: "806594021969",
+          appId: "1:806594021969:web:6ce095a844a6af0d3b4670",
+          measurementId: "G-E2WPJJPZ8K"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    -->
   </body>
 </html>

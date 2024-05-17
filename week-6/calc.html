@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Basic HTML calculator</p>
+
+    <form onclick="calculate(event)">
+        <label for="firstNumber">FIRST NUMBER: </label><br />
+        <input type="number" id="firstNumber" placeholder="enter your first number" required ><br /><br />
+        
+        <label for="operator">OPERATOR SIGN: </label><br />
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br /><br />
+
+        <label for="secondNumber">SECOND NUMBER: </label><br />
+        <input type="number" id="secondNumber" placeholder="enter your second number" required ><br /><br />
+
+        <input type="submit" value="calculate">
+        <button type="reset">clear</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculate(event){
+            event.preventDefault();
+
+
+            let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+            let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+            let operator = document.getElementById("operator").value;
+
+            let result;
+            switch(operator) {
+                case '+':
+                    result = firstNumber + secondNumber;
+                break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                break;
+                case '/':
+                    if (secondNumber !== 0){
+                        result = firstNumber / secondNumber;
+                    }
+                    else{
+                        result= "cannot divide a number by zero";
+
+                    }
+                break;
+                default:
+                    result = " invalid operator";
+
+            }
+
+
+            document.getElementById("result").innerHTML = "RESULT: " + result;
+        }
+    </script>
+</body>
+</html>

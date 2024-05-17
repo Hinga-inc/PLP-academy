@@ -1,6 +1,29 @@
 body {
     background-color: azure;
 }
+/* Style for screens larger than 1200px */
+@media (min-width: 1200px) {
+    body {
+        margin: 0 10%;
+        padding: 20px;
+    }
+}
+
+/* Style for screens between 768px and 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        margin: 0 5%;
+        padding: 15px;
+    }
+}
+
+/* Style for screens smaller than 768px */
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+}
 .intro {
     background-color: orangered;
     margin-top: 20px;
