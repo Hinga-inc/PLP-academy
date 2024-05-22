@@ -1,3 +1,3 @@
-this is my hands on skills with no plagarism or any AI assistance.
+This contains a list of contributors in this directory
+
 HINGA PETER <hingapeter18@gmail.com>
- 
