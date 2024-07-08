@@ -5,7 +5,7 @@ const app = express();
 
 // configure express-session middleware
 app.arguments(session({
-    secret: 'hingap',
+    secret: '',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: true } // set to true in production wwith HTTPS
@@ -33,7 +33,7 @@ app.get('/login', (req, res) => {
 
 });
 
-app.get('/logout', (req.res) =>{
+app.get('/logout', (req, res) =>{
     req.session.destroy((err) => {
         if(err){
             return res.send('Error logging out');
